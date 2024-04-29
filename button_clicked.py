@@ -9,7 +9,7 @@ def b_click(b):
         b["text"] = turn
         turn = "O"
         count += 1
-    elif b["text"] == " " and turn == "Y":
+    elif b["text"] == " " and turn == "O":
         b["text"] = turn
         turn = "X"
         count += 1
