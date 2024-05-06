@@ -9,11 +9,11 @@ def play():
 
     head = Label(menu, text = "★ Tic Tac Toe ★", width = 500, activeforeground='white',
 				activebackground="#49D0F0", bg="#90D9EA",
-				fg="#FF4F00", width=500, font='hobostd', bd=2)
+				fg="#FF4F00", font='hobostd', bd=2)
     B1plyr = Button(menu, text="One Player", command = onePlayer, activeforeground='white',
 				activebackground="#49D0F1", bg="#90D9EA",
 				fg="#08A8D3", width=500, font='corbelbold', bd=2)
-    B2plyr = Button(menu, text="Two Player", command = twoPlayer, activeforeground='white',
+    B2plyr = Button(menu, text="Two Players", command = twoPlayer, activeforeground='white',
 				activebackground="#49D0F1", bg="#90D9EA", fg="#08A8D3",
 				width=500, font='corbelbold', bd=2)
     Bexit = Button(menu, text="Exit", command = menu.quit, width=500, activeforeground='white',
