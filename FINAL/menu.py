@@ -1,6 +1,9 @@
+#%%
 from main import *
 from main import twoPlayer
 from one_player import onePlayer
+
+### This sets up the main menu interface and calls the other files for one player and two player tic tac toe. 
 
 def play():
     menu = Tk()
