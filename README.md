@@ -1,6 +1,6 @@
 # CSF_Project
 CSF Project - TIC - TAC - TOE
-Developed by: Alica Pascalev, Sabrina Pierre, Abhimanyu Barun
+Developed by: Alice Pascalev, Sabrina Pierre, Abhimanyu Barun
 
 To Run the game:
   - Have the 3 files - main.py, menu.py and one_player.py in the same folder.
