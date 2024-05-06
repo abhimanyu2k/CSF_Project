@@ -3,8 +3,8 @@ CSF Project - TIC - TAC - TOE
 Developed by: Alica Pascalev, Sabrina Pierre, Abhimanyu Barun
 
 To Run the game:
-  Have the 3 files - main.py, menuu.py and one_player.py in the same folder.
-  Run menu.py in the terminal
+  - Have the 3 files - main.py, menu.py and one_player.py in the same folder.
+  - Run menu.py in the terminal
 
 The goal of this project was to create a Tic-Tac-Toe game. Tic-tac-toe is a classic paper-and pencil game.
 The game is played by two players. The game board is a 3x3 grid. The players take turns making marks in the quadrants on the board. One player places Xs and the other player places Os. A player may place one mark per turn. The first player to fill a full row of only their marks in the horizontal, vertical, or diagonal direction wins the game.
