@@ -1,6 +1,10 @@
+
+#%%
 from tkinter import *
 from tkinter import messagebox
 import random
+
+### Setting up the grid to make up the game board
 
 global b1, b2, b3, b4, b5, b6, b7, b8, b9
 def grid9(frame2):
@@ -34,12 +38,18 @@ def grid9(frame2):
 turn = "X"
 count = 0
 
+### Setting up the game so the one player starts with placing an X on the board. For each move, the program is checking for winning combinations on the board. If a player tries to place an X where there is already a symbol, an error message will show. 
+
 def computer_move():
     global turn, count
     available_buttons = [b1, b2, b3, b4, b5, b6, b7, b8, b9]
     empty_buttons = [button for button in available_buttons if button["text"] == " "]
     if empty_buttons:
-        pass
+        computer_choice = random.choice(empty_buttons)
+        computer_choice["text"] = turn
+        turn = "X"
+        count += 1
+        checkifwon()
 
 def b_click(b):
     global turn, count
@@ -92,10 +102,22 @@ def checkifwon():
         messagebox.showinfo("Tic Tac Toe", "It's A Tie!\n No One Wins!")
         disable_all_buttons()
 
-    pass
+### This code ensures the structure and presence of the window after every move. It also makes sure the game is destroyed once a tie or winner is called so that another game can be played from scratch once more. 
 
 def disable_all_buttons():
-    pass
+    global turn, count
+    b1.config(state = DISABLED)
+    b2.config(state = DISABLED)
+    b3.config(state = DISABLED)
+    b4.config(state = DISABLED)
+    b5.config(state = DISABLED)
+    b6.config(state = DISABLED)
+    b7.config(state = DISABLED)
+    b8.config(state = DISABLED)
+    b9.config(state = DISABLED)
+    turn = "X"
+    count = 0
+    root.destroy()
 
 def onePlayer():
     global root
