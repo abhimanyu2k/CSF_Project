@@ -2,13 +2,16 @@
 2. Player 1 - X, Player 2 - O
 3. Function to check if someone has won by checking for any winning combinations on the board.
 4. Multiple loops that iterate through multiple states of the game board.
-5. display winner with a message box
+5. Display winner with a message box
 6. Prompt to input the names of the players
 7. Play against pc as well using random package
 8. Create an empty board with 3 rows and 3 columns.
-9. function to decied who goes first.
-10. keep track of who won how many games.
+9. Function to decied who goes first.
+10. Keep track of who won how many games.
 11. A function to check if that box is free or not.
 12. function to check for empty spaces in the board.
 13. determine winner or if game has tied.
-14. 
+14. Reset count after each game to not mess with a new game.
+15. Disable buttons after the game is complete.
+16. Check for errors or warrnings
+17. Global Variables 
