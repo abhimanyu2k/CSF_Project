@@ -81,7 +81,19 @@ def checkifwon():
         disable_all_buttons()
 
 def disable_all_buttons():
-    pass
+    global turn, count
+    b1.config(state = DISABLED)
+    b2.config(state = DISABLED)
+    b3.config(state = DISABLED)
+    b4.config(state = DISABLED)
+    b5.config(state = DISABLED)
+    b6.config(state = DISABLED)
+    b7.config(state = DISABLED)
+    b8.config(state = DISABLED)
+    b9.config(state = DISABLED)
+    turn = "X"
+    count = 0
+    root.destroy()
 
 def twoPlayer():
     global root
