@@ -7,10 +7,18 @@ def play():
     menu.geometry("500x500")
     menu.title("Tic Tac Toe")
 
-    head = Label(menu, text = "TIC TAC TOE", width = 500)
-    B1plyr = Button(menu, text="Single Player", command = onePlayer, width=500)
-    B2plyr = Button(menu, text="Two Player", command = twoPlayer, width=500)
-    Bexit = Button(menu, text="Exit", command = menu.quit, width=500)
+    head = Label(menu, text = "★ Tic Tac Toe ★", width = 500, activeforeground='white',
+				activebackground="#49D0F0", bg="#90D9EA",
+				fg="#FF4F00", font='hobostd', bd=2)
+    B1plyr = Button(menu, text="One Player", command = onePlayer, activeforeground='white',
+				activebackground="#49D0F1", bg="#90D9EA",
+				fg="#08A8D3", width=500, font='corbelbold', bd=2)
+    B2plyr = Button(menu, text="Two Players", command = twoPlayer, activeforeground='white',
+				activebackground="#49D0F1", bg="#90D9EA", fg="#08A8D3",
+				width=500, font='corbelbold', bd=2)
+    Bexit = Button(menu, text="Exit", command = menu.quit, width=500, activeforeground='white',
+				activebackground="#49D0F1", bg="#90D9EA", fg="#08A8D3",
+				font='corbelbold', bd=2)
     head.pack(side='top')
     B1plyr.pack(side='top')
     B2plyr.pack(side='top')
