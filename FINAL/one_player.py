@@ -60,6 +60,38 @@ def b_click(b):
         messagebox.showerror("Tic Tac Toe", "The Box was selected earlier. \n Pick another box!")
 
 def checkifwon():
+    global winner
+    winner = False
+    if (
+        b1["text"] == b2["text"] == b3["text"] == "X" or
+        b4["text"] == b5["text"] == b6["text"] == "X" or
+        b7["text"] == b8["text"] == b9["text"] == "X" or
+        b1["text"] == b4["text"] == b7["text"] == "X" or
+        b2["text"] == b5["text"] == b8["text"] == "X" or
+        b3["text"] == b6["text"] == b9["text"] == "X" or
+        b1["text"] == b5["text"] == b9["text"] == "X" or
+        b3["text"] == b5["text"] == b7["text"] == "X"
+    ):
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "CONGRATULATIONS!  X Wins!!")
+        disable_all_buttons()
+    elif (
+        b1["text"] == b2["text"] == b3["text"] == "O" or
+        b4["text"] == b5["text"] == b6["text"] == "O" or
+        b7["text"] == b8["text"] == b9["text"] == "O" or
+        b1["text"] == b4["text"] == b7["text"] == "O" or
+        b2["text"] == b5["text"] == b8["text"] == "O" or
+        b3["text"] == b6["text"] == b9["text"] == "O" or
+        b1["text"] == b5["text"] == b9["text"] == "O" or
+        b3["text"] == b5["text"] == b7["text"] == "O"
+    ):
+        winner = True
+        messagebox.showinfo("Tic Tac Toe", "CONGRATULATIONS!  O Wins!!")
+        disable_all_buttons()
+    elif count == 9 and not winner:
+        messagebox.showinfo("Tic Tac Toe", "It's A Tie!\n No One Wins!")
+        disable_all_buttons()
+
     pass
 
 def disable_all_buttons():
